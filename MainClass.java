@@ -1,0 +1,27 @@
+import java.util.*;
+class MainClass 
+{
+	public static void main(String[] args)
+	{
+		System.out.println("* *WELCOME TO NUMBER GUESSING GAME* *");
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number : ");
+		int userInput = scan.nextInt();
+		System.out.println("UserInput is "+userInput);
+		Random rand = new Random();
+		int random = rand.nextInt(100);
+		System.out.println("Random Number is "+random);
+		if (userInput==random)
+		{
+			System.out.println("Input Matched");
+		}
+		else if (userInput>random)
+		{
+			System.out.println("Input is greater than random number.");
+		}
+		else
+		{
+			System.out.println("Input is less than random number");
+		}
+	}
+}
